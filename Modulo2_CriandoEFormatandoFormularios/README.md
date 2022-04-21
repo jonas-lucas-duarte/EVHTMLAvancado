@@ -201,3 +201,306 @@ Usado para que ninguém veja os dados que estão sendo inseridos.
 
 </HTML>
 ```
+
+### Inserindo Botões de Escolha Única
+
+*Radio Buttons* permite o usuário selecionar **uma opção única entre um conjunto dde opções**.
+
+`<INPUT TYPE=radio NAME="variável">`
+
+Para exibir uma das opções selecionadas como padrão, usamos o atributo **CHECKED**.
+
+`<INPUT TYPE=radio NAME="variável" CHECKED>valor`
+
+```html
+<HTML>
+	<HEAD>
+		<TITLE>Campo senha</TITLE>
+	</HEAD>
+
+<BODY>
+	<FORM ACTION="email@email.com" METHOD="get">
+    
+		<P>
+			<FONT FACE="CALIBRI">
+				Nome: <INPUT TYPE=text NAME="nome" SIZE="25" MAXLENGHT="50">
+			</FONT>
+		</P>
+
+		<P>
+			<FONT FACE="CALIBRI">
+				Nº do cartão de crédito <INPUT TYPE=text NAME="nun_cartao"  SIZE="16">
+			</FONT>
+		</P>
+
+		<P>
+			<FONT FACE="CALIBRI">
+				Senha: <INPUT TYPE=password NAME="senha" SIZE="6">
+			</FONT>
+		</P>
+
+		<P>
+			<FONT FACE="CALIBRI">
+				Selecione a bandeira do cartão de crédito:
+				<BR>
+	            <INPUT TYPE=radio NAME="selecao-cartao" CHECKED>VISA
+	            <BR>
+	            <INPUT TYPE=radio NAME="selecao-cartao">MASTERCARD
+	        </FONT>
+        </P>
+
+	</FORM>
+</BODY>
+
+</HTML>
+```
+
+### Inserindo Botões de Múltipla Escolha
+
+***Checkboxes*** permite **selecionar várias opções**.
+
+`<INPUT TYPE=checkbox NAME="variável">valor`
+
+```html
+<HTML>
+	<HEAD>
+		<TITLE>Campo senha</TITLE>
+	</HEAD>
+
+<BODY>
+	<FORM ACTION="email@email.com" METHOD="get">
+		<P>
+			<FONT FACE="CALIBRI">
+				Nome: <INPUT TYPE=text NAME="nome" SIZE="25" MAXLENGHT="50">
+			</FONT>
+		</P>
+		<P>
+			<FONT FACE="CALIBRI">
+				Nº do cartão de crédito <INPUT TYPE=text NAME="nun_cartao"  SIZE="16">
+			</FONT>
+		</P>
+		<P>
+			<FONT FACE="CALIBRI">
+				Senha: <INPUT TYPE=password NAME="senha" SIZE="6">
+			</FONT>
+		</P>
+		<P>
+			<FONT FACE="CALIBRI">
+				Selecione a bandeira do cartão de crédito:<BR>
+				<INPUT TYPE=radio NAME="selecao-cartao" CHECKED>VISA<BR>
+				<INPUT TYPE=radio NAME="selecao-cartao">MASTERCARD
+			</FONT>
+		</P>
+		<P>
+			<FONT FACE="CALIBRI">
+				Selecione horário de entrega:<BR>
+				<INPUT TYPE=checkbox NAME="horario1" SIZE="1">8h às 12h<BR>
+				<INPUT TYPE=checkbox NAME="horario2" SIZE="1">13h às 15h<BR>
+				<INPUT TYPE=checkbox NAME="horario2" SIZE="1">16h às 18h
+			</FONT>
+		</P>
+	</FORM>
+</BODY>
+```
+
+### Inserindo uma Área de Texto
+
+Área de Texto usa-se a *tag* `<TEXTAREA></TEXTAREA>`.
+
+Os atributos **ROWS**, especifica o número de linhas (altura) e **COLS**, que especifica o número de colunas (largura).
+
+`<TEXTEAREA NAME="nome" ROWS="numero" COLS="numero">Descrição</TEXTAREA>`
+
+```html
+<HTML>
+   <HEAD>
+      <TITLE>Campo senha</TITLE>
+   </HEAD>
+
+   <BODY>
+      <FORM ACTION="email@email.com" METHOD="get">
+         <P>
+            <FONT FACE="CALIBRI">
+               Nome: <INPUT TYPE=text NAME="nome" SIZE="25" MAXLENGHT="50">
+            </FONT>
+         </P>
+         <P>
+            <FONT FACE="CALIBRI">
+               Nº do cartão de crédito <INPUT TYPE=text NAME="nun_cartao" SIZE="16">
+            </FONT>
+         </P>
+         <P>
+            <FONT FACE="CALIBRI">
+               Senha: <INPUT TYPE=password NAME="senha" SIZE="6">
+            </FONT>
+         </P>
+         <P>
+            <FONT FACE="CALIBRI">
+               Selecione a bandeira do cartão de crédito:<BR> 
+               <INPUT TYPE=radio NAME="selecao-cartao" CHECKED>VISA<BR> 
+               <INPUT TYPE=radio NAME="selecao-cartao">MASTERCARD
+            </FONT>
+         </P>
+         <P>
+            <FONT FACE="CALIBRI">
+               Selecione horário de entrega:<BR> 
+               <INPUT TYPE=checkbox NAME="horario1" SIZE="1">8h às 12h<BR> 
+               <INPUT TYPE=checkbox NAME="horario2" SIZE="1">13h às 15h<BR> 
+               <INPUT TYPE=checkbox NAME="horario2" SIZE="1">16h às 18h
+            </FONT>
+         </P>
+         <P>
+            <FONT FACE="CALIBRI">
+               Endereço: <INPUT TYPE=TEXT NAME="end" SIZE="30">
+            </FONT>
+         </P>
+         <P>
+            <FONT FACE="CALIBRI">
+               Referência: <TEXTAREA NAME="ref" ROWS="2" COLS="40"></TEXTAREA>
+            </FONT>
+         </P>
+      </FORM>
+   </BODY>
+
+</HTML>
+```
+
+### Botões **SUBMIT** e **RESET**
+
+```html
+<HTML>
+   <HEAD>
+      <TITLE>Campo senha</TITLE>
+   </HEAD>
+
+   <BODY>
+      <FORM ACTION="email@email.com" METHOD="get">
+         <P>
+            <FONT FACE="CALIBRI">
+               Nome: <INPUT TYPE=text NAME="nome" SIZE="25" MAXLENGHT="50">
+            </FONT>
+         </P>
+         <P>
+            <FONT FACE="CALIBRI">
+               Nº do cartão de crédito <INPUT TYPE=text NAME="nun_cartao" SIZE="16">
+            </FONT>
+         </P>
+         <P>
+            <FONT FACE="CALIBRI">
+               Senha: <INPUT TYPE=password NAME="senha" SIZE="6">
+            </FONT>
+         </P>
+         <P>
+            <FONT FACE="CALIBRI">
+               Selecione a bandeira do cartão de crédito:<BR> 
+               <INPUT TYPE=radio NAME="selecao-cartao" CHECKED>VISA<BR> 
+               <INPUT TYPE=radio NAME="selecao-cartao">MASTERCARD
+            </FONT>
+         </P>
+         <P>
+            <FONT FACE="CALIBRI">
+               Selecione horário de entrega:<BR> 
+               <INPUT TYPE=checkbox NAME="horario1" SIZE="1">8h às 12h<BR> 
+               <INPUT TYPE=checkbox NAME="horario2" SIZE="1">13h às 15h<BR> 
+               <INPUT TYPE=checkbox NAME="horario2" SIZE="1">16h às 18h
+            </FONT>
+         </P>
+         <P>
+            <FONT FACE="CALIBRI">
+               Endereço: <INPUT TYPE=TEXT NAME="end" SIZE="30">
+            </FONT>
+         </P>
+         <P>
+            <FONT FACE="CALIBRI">
+               Referência: <TEXTAREA NAME="ref" ROWS="2" COLS="40"></TEXTAREA>
+            </FONT>
+         </P>
+         <INPUT TYPE=submit VALUE="Enviar"><INPUT TYPE=reset VALUE="Limpar">
+      </FORM>
+   </BODY>
+
+</HTML>
+```
+
+#### **SUBMIT**
+
+Envia ao servidor *web* a informação digitada pelo usuário para ser processada pelo *script* CGI correspondente.
+
+`<INPUT TYPE=submit>`
+
+Para trocar o texto **padrão do botão**, insira o atributo **VALUE**.
+
+`<INPUT TYPE=submit VALUE="Enviar">`
+
+#### **RESET**
+
+Apaga as informações inseridas em todos os campos.
+
+`<INPUT TYPE=reset>`
+
+Para trocar o texto **padrão do botão**, insira o atributo **VALUE**.
+
+`<INPUT TYPE=reset VALUE="Limpar">`
+
+### Inserindo um Campo Oculto
+
+Campo oculto em um formulário para enviar uma palavra-chave, um número de validação ou qualque *string*, para o *script CGI*.
+
+Usa-se o valor **HIDDEN** no atributo **TYPE**.
+
+`<INPUT TYPE=HIDDEN NAME="variável" VALUE="valor">`
+
+```html
+<HTML>
+   <HEAD>
+      <TITLE>Campo senha</TITLE>
+   </HEAD>
+
+   <BODY>
+      <FORM ACTION="email@email.com" METHOD="get">
+         <P>
+            <FONT FACE="CALIBRI">
+               Nome: <INPUT TYPE=text NAME="nome" SIZE="25" MAXLENGHT="50">
+            </FONT>
+         </P>
+         <P>
+            <FONT FACE="CALIBRI">
+               Nº do cartão de crédito <INPUT TYPE=text NAME="nun_cartao" SIZE="16">
+            </FONT>
+         </P>
+         <P>
+            <FONT FACE="CALIBRI">
+               Senha: <INPUT TYPE=password NAME="senha" SIZE="6">
+            </FONT>
+         </P>
+         <P>
+            <FONT FACE="CALIBRI">
+               Selecione a bandeira do cartão de crédito:<BR> 
+               <INPUT TYPE=radio NAME="selecao-cartao" CHECKED>VISA<BR> 
+               <INPUT TYPE=radio NAME="selecao-cartao">MASTERCARD
+            </FONT>
+         </P>
+         <P>
+            <FONT FACE="CALIBRI">
+               Selecione horário de entrega:<BR> 
+               <INPUT TYPE=checkbox NAME="horario1" SIZE="1">8h às 12h<BR> 
+               <INPUT TYPE=checkbox NAME="horario2" SIZE="1">13h às 15h<BR> 
+               <INPUT TYPE=checkbox NAME="horario2" SIZE="1">16h às 18h
+            </FONT>
+         </P>
+         <P>
+            <FONT FACE="CALIBRI">
+               Endereço: <INPUT TYPE=TEXT NAME="end" SIZE="30">
+            </FONT>
+         </P>
+         <P>
+            <FONT FACE="CALIBRI">
+               Referência: <TEXTAREA NAME="ref" ROWS="2" COLS="40"></TEXTAREA>
+            </FONT>
+         </P>
+         <INPUT TYPE=submit VALUE="Enviar"><INPUT TYPE=reset VALUE="Limpar"><INPUT TYPE=hidden NAME="cpf" VALUE="verdadeiro">
+      </FORM>
+   </BODY>
+
+</HTML>
+```
