@@ -504,3 +504,73 @@ Usa-se o valor **HIDDEN** no atributo **TYPE**.
 
 </HTML>
 ```
+
+### Lista de Opções ou Menu?
+
+Usa-se a mesma *tag* `<SELECT></SELECT>`
+
+```html
+<SELECT MULTIPLE NAME="nome_da_lista">
+   <OPTION SELECTED VALUE="valor1">Valor
+</SELECT>
+```
+
+- `MULTIPLE`: Exibe a lista sempre aberta.
+
+- `NAME="nome_da_lista"`: Atributo que identifica a lista.
+
+- `OPTION`: Cria cada item da lista.
+
+- `SELECTED`: Indica o valor padrão da lista.
+
+- `VALUE="valor1"`: Valor que será retornado.
+
+#### Lista de Opções
+
+O número de opções exibidas é definido pelo atributo **SIZE**.
+
+```html
+<HTML>
+    <HEAD>
+        <TITLE>Lista de opções</TITLE>
+    </HEAD>
+
+<BODY>
+    <H3>EXEMPLO DE LISTA DE OPÇÕES</H3>
+    <H4>Escolha a cidade que deseja conhecer</H4>
+    <FORM>
+        <SELECT NAME="cidades" SIZE="4">
+            <OPTION>Londres 
+            <OPTION>Paris
+            <OPTION>Roma 
+            <OPTION>Madri
+        </SELECT>
+    </FORM>
+</BODY>
+
+</HTML>
+```
+
+#### Menu
+
+```html
+<HTML>
+   <HEAD>
+      <TITLE>Menu de opções</TITLE>
+   </HEAD>
+
+<BODY>
+   <H3>EXEMPLO DE MENU</H3>
+   <H4>Escolha a cidade que deseja conhecer</H4>
+   <FORM>
+      <SELECT NAME="cidades">
+         <OPTION>Londres 
+         <OPTION>Paris
+         <OPTION>Roma 
+         <OPTION>Madri
+      </SELECT>
+   </FORM>
+</BODY>
+
+</HTML>
+```
